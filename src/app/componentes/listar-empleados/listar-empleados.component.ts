@@ -14,12 +14,18 @@ export class ListarEmpleadosComponent {
   misEmpleados!:Personal[];
 
   constructor(private empleadosService:EmpleadosService){
-
+         
   }
 
   ngOnInit(): void {
      this.misEmpleados=this.empleadosService.getAll();
-     console.log(this.empleadosService);
+     //console.log("***"+this.misEmpleados);
+    // this.pruebas();
     
+  }
+
+  pruebas():void{
+        console.log(this.empleadosService.getById(4157));         
+        console.log(this.empleadosService.delete(4157));        
   }
 }
