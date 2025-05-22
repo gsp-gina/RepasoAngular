@@ -1,0 +1,19 @@
+.alerta-flotante {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1050; /* asegúrate que esté encima de todo */
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: fadeInOut 3s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0%   { opacity: 0; transform: translate(-50%, -60%); }
+  10%  { opacity: 1; transform: translate(-50%, -50%); }
+  90%  { opacity: 1; transform: translate(-50%, -50%); }
+  100% { opacity: 0; transform: translate(-50%, -40%); }
+}
