@@ -8,13 +8,8 @@ import { Personal } from './models/personal';
 export class EmpleadosService {
 
 
-  empleados!:Personal[] ;
- 
-  constructor() {
-    
-  }
-
- 
+  empleados!:Personal[] ; 
+  constructor() {   }
 
   getAll():Personal[]{
     const recuperaDatos: Personal[] = JSON.parse(localStorage.getItem('trabajadores') ?? '[]');

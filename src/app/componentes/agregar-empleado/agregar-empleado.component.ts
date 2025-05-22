@@ -22,9 +22,7 @@ export class AgregarEmpleadoComponent {
     foto: ''
   };
 
-  constructor(private empleadosService:EmpleadosService){
-
-  }
+  constructor(private empleadosService:EmpleadosService){  }
 
   // Esta propiedad NO forma parte del double binding del objeto trabajador
   esFemenino: boolean = false;
@@ -41,13 +39,11 @@ export class AgregarEmpleadoComponent {
     this.trabajador.foto = `https://randomuser.me/api/portraits/${genero}/${id}.jpg`;
   }
 
-  guardar() {
-     
+  guardar() {     
     this.empleadosService.create(this.trabajador);
     this.limpiar();
     console.log('Trabajador:', this.trabajador);
     console.log('¿Es femenino?:', this.esFemenino);
-
   }
 
   limpiar():void{
@@ -59,11 +55,10 @@ export class AgregarEmpleadoComponent {
     antiguedad: 0,
     foto: ''
   };
+
   this.esFemenino = false;
 
   // Reiniciar el formulario
-   
-
   // Mostrar mensaje de éxito
   this.mensajeExito = '¡Formulario enviado exitosamente!';
 

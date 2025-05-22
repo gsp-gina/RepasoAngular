@@ -13,8 +13,7 @@ export class ListarEmpleadosComponent {
   
   misEmpleados!:Personal[];
 
-  constructor(private empleadosService:EmpleadosService){
-         
+  constructor(private empleadosService:EmpleadosService){         
   }
 
   ngOnInit(): void {
