@@ -5,12 +5,14 @@ import { ConsultaComponent } from './componentes/consulta/consulta.component';
 import { EliminarComponent } from './componentes/eliminar/eliminar.component';
 import { ActualizarComponent } from './componentes/actualizar/actualizar.component';
 import { EditarComponent } from './componentes/editar/editar.component';
+import { ContactoComponent } from './componentes/contacto/contacto.component';
 
 export const routes: Routes = [
   { path: 'listar', component: ListarEmpleadosComponent },
   { path: 'agregar', component: AgregarEmpleadoComponent },
   { path: 'consulta/:id', component: ConsultaComponent },
   { path: 'eliminar', component: EliminarComponent },
+  { path: 'contacto', component: ContactoComponent  },
   { path: 'actualizar', component: ActualizarComponent },
   { path: 'editar/:id', component: EditarComponent },
 
